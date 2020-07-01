@@ -1,0 +1,331 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\WheelLight.rc2""  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.\r\n"
+    "#include ""afxres.rc""     // 표준 구성 요소입니다.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\WheelLight.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Wheel Light Client info..."
+FONT 8, "맑은 고딕", 400, 0, 0x81
+BEGIN
+    LTEXT           "Wheel Light Client - ver 0.1a",IDC_STATIC,17,17,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2012 - Innowell Co., Ltd.",IDC_STATIC,17,30,135,8
+    DEFPUSHBUTTON   "OK",IDOK,188,5,40,13,WS_GROUP
+    GROUPBOX        "",IDC_STATIC,7,5,148,43
+END
+
+IDD_WHEELLIGHT_DIALOG DIALOGEX 0, 0, 611, 250
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Wheel Light Client"
+MENU IDR_SYS_MENU
+FONT 8, "맑은 고딕", 400, 0, 0x81
+BEGIN
+    GROUPBOX        "Pattern",IDC_GROUP_PTRN,9,10,213,31
+    COMBOBOX        IDC_COMBO_PTRN_NUM,54,22,66,28,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_PTRN_SIZE,156,22,55,28,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Number :",IDC_STATIC_NUM,18,24,32,9
+    LTEXT           "Size :",IDC_STATIC_SIZE,133,24,19,9
+    GROUPBOX        "Color",IDC_GROUP_COLOR,5,199,161,30
+    CONTROL         131,IDC_LBTN_COLOR,"Static",SS_BITMAP | WS_BORDER,17,208,17,16
+    PUSHBUTTON      "",IDC_BTN_BLUE,99,211,13,13,BS_BITMAP,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "",IDC_BTN_GREEN,85,211,13,13,BS_BITMAP,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "",IDC_BTN_RED,71,211,13,13,BS_BITMAP,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "",IDC_BTN_WHITE,57,211,13,13,BS_BITMAP,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "",IDC_BTN_YELLOW,113,211,13,13,BS_BITMAP,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "",IDC_BTN_PURPLE,127,211,13,13,BS_BITMAP,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "",IDC_BTN_BLACK,43,211,13,13,BS_BITMAP,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "",IDC_BTN_SKYBLUE,141,211,13,13,BS_BITMAP,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Confirm",IDC_DONE,549,213,53,17
+    LTEXT           "",IDC_STATUS_DISPLAY,0,238,611,12,0,WS_EX_STATICEDGE
+    LTEXT           "",IDC_STATIC_COM,567,7,42,10,0,WS_EX_STATICEDGE
+END
+
+IDD_COM_CONNECT DIALOGEX 0, 0, 218, 159
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Connect - Serial Port"
+FONT 8, "맑은 고딕", 400, 0, 0x81
+BEGIN
+    DEFPUSHBUTTON   "Connect",IDOK,94,30,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,159,136,50,14
+    GROUPBOX        "Serial Port info",IDC_STATIC,15,14,194,117
+    COMBOBOX        IDC_COMBO_PORT,25,30,55,19,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Default Setting",IDC_STATIC,22,54,59,8
+    GROUPBOX        "",IDC_STATIC,25,60,174,57
+    LTEXT           "Baudrate",IDC_STATIC,29,67,54,11
+    LTEXT           "Data Bit",IDC_STATIC,29,77,54,11
+    LTEXT           "Parity",IDC_STATIC,29,87,54,11
+    LTEXT           "Stop bits",IDC_STATIC,29,96,54,11
+    LTEXT           "Flow Control",IDC_STATIC,29,106,54,11
+    LTEXT           "- 19200",IDC_STATIC,86,68,54,11
+    LTEXT           "- 8",IDC_STATIC,86,77,54,11
+    LTEXT           "- 0",IDC_STATIC,86,87,54,11
+    LTEXT           "- 1",IDC_STATIC,86,96,54,11
+    LTEXT           "- none",IDC_STATIC,86,105,54,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "TODO: <파일 설명>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "WheelLight.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "WheelLight.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_WHEELLIGHT_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 609
+        TOPMARGIN, 7
+    END
+
+    IDD_COM_CONNECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_WHEELLIGHT_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_PTRN_NUM, 0x403, 6, 0
+0x4e20, 0x2e6f, 0x0031, 
+    IDC_COMBO_PTRN_SIZE, 0x403, 6, 0
+0x7820, 0x3320, 0x0032, 
+    IDC_COMBO_PTRN_SIZE, 0x403, 6, 0
+0x7820, 0x3620, 0x0034, 
+    IDC_COMBO_PTRN_SIZE, 0x403, 7, 0
+0x7820, 0x3120, 0x3832, "\000" 
+    0
+END
+
+IDD_COM_CONNECT DLGINIT
+BEGIN
+    IDC_COMBO_PORT, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_COMBO_PORT, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    IDC_COMBO_PORT, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    IDC_COMBO_PORT, 0x403, 5, 0
+0x4f43, 0x344d, "\000" 
+    IDC_COMBO_PORT, 0x403, 5, 0
+0x4f43, 0x354d, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_COLOR_RED           BITMAP                  "res\\red.bmp"
+IDB_COLOR_BLACK         BITMAP                  "res\\black.bmp"
+IDB_COLOR_WHITE         BITMAP                  "res\\white.bmp"
+IDB_COLOR_BLUE          BITMAP                  "res\\blue.bmp"
+IDB_COLOR_YELLOW        BITMAP                  "res\\yellow.bmp"
+IDB_COLOR_PURPLE        BITMAP                  "res\\purple.bmp"
+IDB_COLOR_GREEN         BITMAP                  "res\\green.bmp"
+IDB_COLOR_SKYBLUE       BITMAP                  "res\\skyblue.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_SYS_MENU MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Save (Pattern)",              ID_FILE_SAVE_PATTERN
+        MENUITEM "Load (Pattern)",              ID_FILE_LOAD_PATTERN
+        MENUITEM SEPARATOR
+        MENUITEM "&Save (BMP)",                 ID_FILE_SAVE, INACTIVE
+        MENUITEM "&Load (BMP)",                 ID_FILE_LOAD, INACTIVE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    POPUP "&Option"
+    BEGIN
+        MENUITEM "Add Pattern",                 ID_OPTION_ADDPATTERN
+        MENUITEM "Delete Pattern",              ID_OPTION_DELETEPATTERN
+        MENUITEM SEPARATOR
+        POPUP "LED"
+        BEGIN
+            MENUITEM "        8",                   ID_LED_8
+            MENUITEM "       16",                   ID_LED_16
+            MENUITEM "       24",                   ID_LED_24
+        END
+    END
+    POPUP "&Port"
+    BEGIN
+        MENUITEM "&Connect",                    ID_PORT_CONNECT
+        MENUITEM "&Disconnect",                 ID_PORT_DISCONNECT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "About",                       ID_HELP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "WheelLight 정보(&A)..."
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\WheelLight.rc2"  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.
+#include "afxres.rc"     // 표준 구성 요소입니다.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
